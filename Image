@@ -1,0 +1,66 @@
+Image
+
+Image是用来保存图像的类，数据文件通过灰度图表示图像，一个字节用来储存一个像素的灰度，我们通过将一张图片的这些信息用来表示一张图片，通过将每个像素的灰度值提取出来用数字形式表示就可以进行运算了，最终的结果可以通过特定的字符，如" "或"*"来近似表示图像
+
+私有成员
+std::string image
+灰度图，一个字节就能表示一个像素点的值
+
+double* Arr
+将字符串模式的像素点转为整数 “12” -> int类型的12
+
+int Row
+int Col
+图像的宽度高度
+
+void Trans_Double()
+将灰度图转化为double类型
+
+公有成员
+void Add_Image(const std::string& temp, const int& rows, const int&cols)
+
+输入：一维图像（从左到右），图像的宽度和高度
+输出：无
+功能：保存到类中
+
+
+double* Get_Arr()
+
+输入：无
+输出：一维double数组
+功能：获取图像的一维double
+
+
+const std::string& Get_Image()
+
+输入：无
+输出：一维double字符串
+功能：获取一维字符串图像
+
+
+int Get_Size()
+
+输入：无
+输出：图像的大小
+功能：获取图像大小
+
+
+int Get_Row()
+int Get_Col()
+
+获取图像的宽度和高度
+
+
+double Multiply(double*)
+
+输入：一维长度与图像相同的向量
+输出：相乘结果
+功能：向量点乘结果
+
+
+void Print_Image()
+
+输入：一维长度与图像相同的向量
+输出：相乘结果
+功能：打印对应的图片
+

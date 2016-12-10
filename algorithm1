@@ -1,0 +1,17 @@
+algorithm1
+
+私有函数
+double Euclidean_Distance(const int &a, const int &b, Image* image_arr)
+
+输入：图像一下标，图像二下标
+输出：欧式距离
+功能：计算两个图像的欧式距离
+
+方法
+std::pair<int, int> Closet_Pair(const int& total_image, const int& each_image_size, Image* image, const int& m)
+
+输入：图像总数量，图像大小，图像数组指针，随机向量的数量
+输出：该随机算法下的最近对
+功能：使用随机算法求解高维空间下的最近对问题
+
+在Closet_Pair方法中，我们分别记录了生成随机向量，快排方法找最近对，归并方法找最近对的时间，以及用两种方法找出的结果，以便我们最终的比较。方法的主体就是分别调用algorithm2,algorithm3,algorithm4,实现随机投影，分别用不同的方法找最近对，并在每次投影找出的最近对之中找出最近的两点来作为我们输出的对象，从而返回结果。

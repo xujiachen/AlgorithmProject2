@@ -1,0 +1,21 @@
+algorithm2
+
+私有函数
+void boxmuller(double* data, size_t count)
+
+输入：保存随机向量，随机向量的长度（必须是偶数）
+输出：无
+功能：通过boxmuller算法以及知乎上参考的改良版本，生成偶数长度的随机向量
+
+方法
+std::pair<int,double>** Random_Projection(std::pair<int, double>**S, const int& total_image, const int& each_image_size, Image* image_arr, const int& m)
+
+输入：S保存所有映射到随机向量后的向量，a是随机向量
+输出：返回所有图像投影到所有随机向量后的向量
+功能：生成所有图像投影到所有随机向量后的向量
+
+先使用boxmuller方法生成随机向量，然后向每个向量进行投影，最后返回结果
+
+
+
+
